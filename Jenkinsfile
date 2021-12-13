@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Hello Jenkins!' 
                 echo 'Jenkins file from Github!'
-                echo '$currentBuild.displayName'
+                echo '${currentBuild.displayName}'
             }
         }
     }
