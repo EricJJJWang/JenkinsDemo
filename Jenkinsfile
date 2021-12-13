@@ -4,7 +4,8 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo 'Hello Jenkins!' 
-                echo 'Jenkins file from Github!' 
+                echo 'Jenkins file from Github!'
+                echo '$currentBuild.displayName'
             }
         }
     }
